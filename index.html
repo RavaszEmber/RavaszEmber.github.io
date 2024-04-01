@@ -70,6 +70,7 @@
 								<p> This list is always evolving and growing, so check in for updates! </p>
 								<h3 class="major">Electric Skateboard</h3>
 								<p> In this project I made an electric longboard using all DIY parts.</p>
+								<span class="image main"><img src="images/Chain board bottom.jpg" alt="" /></span>
 								<p> Many practical lessons were learned about electric motors, ESCs, LiPo batteries, and power transfer through belts and chains.</p>
 								<p> Check out the video of some friends and me testing it on the high school track (to add).</p>
 								<h3 class="major">Automated Hydroponics System</h3>
@@ -98,6 +99,18 @@
 								<p> The ESP32 and WS2811s allowed me to individually address each LED, leading to custom animations and colors. The ESP32, having wifi, was connected to my apartment network and pings a Google NTP server every 5 minutes to check the time. If the time is after 6 PM and before 8 AM the lights are turned on. Otherwise, they are switched off to conserve electricity.</p>
 								<p> Future plans include adding more animations and color combinations for specific holidays. Moreover, the NTP server can be used to check the current date against a database and automatically update to holiday specific modes on the appropriate dates. A web interface can also be made to manually control the lights (on/off, color, animation, etc).</p>
 								<p> This is also a good opportunity to create a PCB (should target ESP32-C3 IoT line) and make a custom enclosure. 12 V lights can be used instead of 5 V to reduce color degredation.</p>
+								<h3 class="major">Street Light Sign</h3>
+								<p> In this project I retrofitted an old crosswalk sign my high school had in storage into a usable two digit display.</p>
+								<p> This display used an Arduino Mega to drive the controls. The Mega would read buttom presses from a remote control with an IR receiver and display the numbers pressed on the remote. To drive the lights NPN transistors were used as digital switches which the Mega's IO controlled.</p>
+								<video controls>
+								    <source src="images/Sign Scroll.mp4" type="video/mp4">
+								    Your browser does not support the video tag.
+								</video>
+								<video controls>
+								    <source src="images/Sign Numbers.mp4" type="video/mp4">
+								    Your browser does not support the video tag.
+								</video>
+								<p> The sign itself was later finished with a hand-made wooden case.</p>
 								
 								
 								
