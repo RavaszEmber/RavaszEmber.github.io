@@ -47,7 +47,7 @@
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#projects">Projects</a></li>
 								<li><a href="assets/Benjamin Molnar Resume.pdf" download>Resume</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a href="#links">Links</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -63,7 +63,7 @@
 								<p> Hello! </p>
 								<p> My name is Benjamin Molnar. I'm an engineer who enjoys traveling, the outdoors, photography, programming, and design challenges.</p>
 								<p> In my free time you can find me exploring different cities, spending time with friends, competing in competitive programming contests, or working on personal projects <i>(like this website).</i>
-								<p> Check out some of my <a href="#projects">other projects</a> and feel free to get in <a href="#contact">contact</a> with me!</p>
+								<p> Check out some of my <a href="#projects">other projects</a> and feel free to <a href="#links">get in touch</a> with me!</p>
 							</article>
 
 						<!-- Projects -->
@@ -129,22 +129,22 @@
 								<span class="image main"><img src="images/Particulate Enclosure.jpg" alt=""/></span>
 								<p> This project originally features an Arduino Micro as the microcontroller. A particulate sensor was outfitted and an OLED screen, addressable light strip, and buzzer were added as indicators. When the particulate count exceeded certain thresholds the light would increment, change colors, and eventually sound the buzzer. The OLED would constantly refresh with the newest sensor reading. A LiPo battery was added to make the device portable, and USB-C for charging would recharge the battery and/or power the device.</p>
 								<span class="image main"><img src="images/Particulate PCB.jpg" alt=""/></span>
-								<p> This project was chosen as a good introduction to PCB design. I created a custom PCB design with KiCAD and had boards manufactured with JLCPCB. Parts were sourced and SMD reflow soldering was used to solder the components to the board. I ensured that ICSP pins were included so the bare metal ATMEGA328P chip could be flashed with the appropriate controls software.</p>
+								<p> This project was chosen as a good introduction to PCB design. I created a custom PCB design with KiCAD and had boards manufactured with JLCPCB. Parts were sourced and SMD reflow soldering was used to solder the components to the board. I ensured that ICSP pins were included so the bare metal ATMEGA328P chip could be flashed with the appropriate controls software. The program was flashed via AVRDUDE.</p>
 								<p> Interestingly, this deviced was finished before the Canadian wildfires caused unprecedented smog and air pollution. This detector was used to monitor areas of my work building for their local particulate count. When outside, the detector corroborated with particulate counts from nearby weather stations.</p>
 								<h3 class="major">Street Light Sign</h3>
-								<span class="image main"><img src="images/Sign Lit Front.jpg" alt=""/></span>
+								<!-- <span class="image main"><img src="images/Sign Lit Front.jpg" alt=""/></span> -->
 								<p> In this project I retrofitted an old crosswalk sign my high school had in storage into a usable two digit display.</p>
 								<span class="image main"><img src="images/Sign Lit Angle.jpg" alt=""/></span>
 								<p> This display used an Arduino Mega to drive the controls. The Mega would read buttom presses from a remote control with an IR receiver and display the numbers pressed on the remote. To drive the lights NPN transistors were used as digital switches which the Mega's IO controlled.</p>
 								<span class="image main"><img src="images/Sign Electronics.jpg" alt=""/></span>
-								<video controls>
+								<!-- <video controls>
 								    <source src="images/Sign Scroll.mp4" type="video/mp4">
 								    Your browser does not support the video tag.
 								</video>
 								<video controls>
 								    <source src="images/Sign Numbers.mp4" type="video/mp4">
 								    Your browser does not support the video tag.
-								</video>
+								</video> -->
 								<p> The sign itself was later finished with a hand-made wooden case.</p>
 								
 								
@@ -153,33 +153,17 @@
 
 						<!-- Resume -->
 
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
+						<!-- I think I'd rather make this "Links" and just link different accounts (LinkedIn, Github, YouTube, Leetcode, Thingiverse, Instagram. Gmail should be obvious from resume, but maybe include it here too?) -->
+						<!-- Links -->
+							<article id="links">
+								<h2 class="major">Links</h2>
 								<ul class="icons">
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									<li><a href="#" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+									<li><a href="#" class="icon brands fa-leetcode"><span class="label">LeetCode</span></a></li>
+									<li><a href="#" class="icon brands fa-thingiverse"><span class="label">Thingiverse</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">instagram</span></a></li>
 								</ul>
 							</article>
 
