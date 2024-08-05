@@ -72,6 +72,26 @@
 								<span class="image main"><img src="images/IMAG0784.jpg" alt="" /></span>
 								<p> Here you can find a list of some of my personal projects.</p>
 								<p> This list is always evolving and growing, so check in for updates! </p>
+
+								<h3 class="major">Powder Dispensing System (WIP)</h3>
+								<p> In this project I'm creating a system to dispense different powders in a mold. Where each powder is dispensed is predefined, such that a part with several different metal powders can be created when the mold is sintered.</p>
+								<span class="image main"><img src="images/Powder Doser View.jpg" alt="" /></span>
+								<p> My role in this project is to design the controls necessary to control the unit. This primarily includes the firmware creation and some electronics integration.</p>
+								<video controls>
+								    <source src="images/Powder Doser Drawing World 720p.mp4" type="video/mp4">
+								    Your browser does not support the video tag.
+								</video>
+								<p> Currently, the system can move freely with different steppers concurrently, parse command, and react to commands. In lieu of a powder dispensing nozzle, images are drawn to demonstrate capabilities.</p>
+								<span class="image main"><img src="images/World Drawn.jpg" alt="" /></span>
+								<p> Images are created using SVG files, which are fed through a custom python script to extract coordinates. Another individual is responsible for the mechanical design of the dispensing system.</p>
+								<video controls>
+								    <source src="images/World Code.mp4" type="video/mp4">
+								    Your browser does not support the video tag.
+								</video>
+								<p> The mainboard uses a STM32H723 microcontroller to control the stepper motors, react to interrupts, and other peripherals. This is linked to a Raspberry Pi CM4 microprocessor as a downstream USB device. This microprocessor runs linux and can interface with the STM32 over USB CDC.</p>
+								<p> The use of STM32 comes with great flexibility, but is very low level. Instead of using libraries the stepper motor steps are controlled using hardware timer with callback interrupts. The USB CDC implementation required management of buffers in C to ensure proper receipt and transmission of messages. Eventually an RTOS like FreeRTOS could be implemented to handle several concurrent tasks.</p>
+								<p> While these implementations come with steep learning curves, the result is a more robust system with great amounts of flexibility!</p>
+
 								<h3 class="major">Electric Skateboard</h3>
 								<p> In this project I made an electric longboard using all DIY parts.</p>
 								<span class="image main"><img src="images/Chain board bottom.jpg" alt="" /></span>
@@ -81,6 +101,7 @@
 								    <source src="images/Electric Skateboard on Sidewalk.mp4" type="video/mp4">
 								    Your browser does not support the video tag.
 								</video>
+
 								<h3 class="major">Automated Hydroponics System</h3>
 								<span class="image main"><img src="images/Hydroponics No Plants.jpg" alt="" /></span>
 								<p> For my college engineering capstone project my team and I created an automated hydroponics system for urban use.</p>
@@ -89,6 +110,7 @@
 								<span class="image main"><img src="images/Actual Plant pic large.jpg" alt="" /></span>
 								<p> Some future iterations on this could greatly improve its overall design and electronics feature set. </p>
 								<p> Note: Personally I see aeroponics in enclosed spheres as an area of interest for future projects. </p>
+
 								<h3 class="major">Monorail Tripteron</h3>
 								<p> For the final design project of my computer aided design class I created a monorail tripteron in SOLIDWORKS.</p>
 								<video controls>
@@ -98,21 +120,26 @@
 								<p> A tripteron is a mechanical motion devices that uses three separate parallel motion mechanisms to position a point in 3D space. A simple way to think about this concept is to envision three arms at orthogonal angles, which position three planes in space. The intersection of the 3 planes creates a single point in 3D space, which can be manipulated by the motion of any one arm.</p>
 								<p> A monorail tripteron uses the same concept, but places the three arms on a single rail. To accomplish the same goal the arms are angled such that they still create a unique intersection in space.</p>
 								<p> This project has applications in many areas and the controls would be a fun inverse kinematics problem to solve if actually implemented. Although not practical over cartesian and delta systems, it could indeed be used in 3D printing applications. </p>
+
 								<h3 class="major">TI-BASIC Snake</h3>
 								<p> TI-BASIC is the programming language available on the TI-84 line of calculators. I used this to program a working snake game with score, collision, and more on my TI-84. </p>
 								<p> TI-BASIC is a great low level programming language and is how I got into programming. I completed this project during bus rides in high school. I believe the snake coordinates were done using a list with 4 digit integers with the first 2 digits representing the X coordinate of a snake link and the second 2 digits representing the Y coordinate.</p>
 								<p> Several challenges make this hard, like typing and programming with the calculator keys instead of a keyboard and limited variables (A-Z). Sadly this program got lost to time after an assembly program gone wrong cleared the RAM (thanks Zach).</p>
 								<h3 class="major">Python Battleship</h3>
+
 								<p> In this project I recreated the classic battleship board game in Python. </p>
 								<p> Of course a GUI was used for this. I'm generally of the opinion that GUIs are essential to good software interfaces. To accomplish this, I used the Tkinter Python library to draw a grid of tiles dependent on a user selected difficulty (Easy, Medium, Hard). A cheats mode was also created for debugging.</p>
 								<p> Ships would be generated recursively such that the ship set for each difficulty fit on valid coordinates in the grid (i.e. no overlapping and no ships out of bounds). To play, the user would click each tile, which would turn red or green to indicate a hit or miss. When a ship was sunk the ship name would be shown to the user. The game would finish when no ships remained alive in the game.</p>
+
 								<h3 class="major">FDM 3D Printer</h3>
 								<span class="image main"><img src="images/Printer Front.jpg" alt=""/></span>
 								<p> Years ago I purchased the cheapest large footprint FDM 3D printer I could find, the CR-10. This printer isn't the best off the shelf, but provided a great platform for me to experiment with and modify. </p>
 								<p> Over time essentially every part of the original printer was swapped out. Modifications included an AC heated bed, an E3D V6 hotend, a custom CADed hotend assembly, a second Z axis, a new board with silent stepper motor drivers and reflashed firmware, a bed leveling system, a TFT touch screen display, the addition of an Octo Pi for remote printing and monitoring, and more.</p>
 								<p> This printer has been used extensively over the years in different projects, printing CAD models, printing parts for customers, and more. This is a continuous project which always has things to be added and changed.</p>
+
 								<span class="image main"><img src="images/Printer Back.jpg" alt=""/></span>
 								<p> Some future modifications include dual extruders and creating a custom controller board from scratch. </p>
+
 								<h3 class="major">Balcony Lights</h3>
 								<p> For this project I decided to add lights to my apartment balcony for the holidays. </p>
 								<span class="image main"><img src="images/Christmas lights with snow.jpg" alt=""/></span>
@@ -124,6 +151,7 @@
 								</video>
 								<p> Future plans include adding more animations and color combinations for specific holidays. Moreover, the NTP server can be used to check the current date against a database and automatically update to holiday specific modes on the appropriate dates. A web interface can also be made to manually control the lights (on/off, color, animation, etc).</p>
 								<p> This is also a good opportunity to create a PCB (should target ESP32-C3 IoT line) and make a custom enclosure. 12 V lights can be used instead of 5 V to reduce color degredation.</p>
+
 								<h3 class="major">Particulate Detector</h3>
 								<p> In this project I created an airborn particulate detector using an ATMEGA 328P microcontroller. The purpose of the project was to be able to detect increased levels of airborn pollution and alert people about safety risks.</p>
 								<span class="image main"><img src="images/Particulate Enclosure.jpg" alt=""/></span>
@@ -131,6 +159,7 @@
 								<span class="image main"><img src="images/Particulate PCB.jpg" alt=""/></span>
 								<p> This project was chosen as a good introduction to PCB design. I created a custom PCB design with KiCAD and had boards manufactured with JLCPCB. Parts were sourced and SMD reflow soldering was used to solder the components to the board. I ensured that ICSP pins were included so the bare metal ATMEGA328P chip could be flashed with the appropriate controls software. The program was flashed via AVRDUDE.</p>
 								<p> Interestingly, this deviced was finished before the Canadian wildfires caused unprecedented smog and air pollution. This detector was used to monitor areas of my work building for their local particulate count. When outside, the detector corroborated with particulate counts from nearby weather stations.</p>
+
 								<h3 class="major">Street Light Sign</h3>
 								<!-- <span class="image main"><img src="images/Sign Lit Front.jpg" alt=""/></span> -->
 								<p> In this project I retrofitted an old crosswalk sign my high school had in storage into a usable two digit display.</p>
