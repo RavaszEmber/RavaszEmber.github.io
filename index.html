@@ -88,10 +88,7 @@
 								<p> Currently, the system can move freely with different steppers concurrently, parse command, and react to commands. In lieu of a powder dispensing nozzle, images are drawn to demonstrate capabilities.</p>
 								<span class="image main"><img src="images/World Drawn.jpg" alt="" /></span>
 								<p> Images are created using SVG files, which are fed through a custom python script to extract coordinates. Another individual is responsible for the mechanical design of the dispensing system.</p>
-								<video controls>
-								    <source src="images/World Code.mp4" type="video/mp4">
-								    Your browser does not support the video tag.
-								</video>
+								<span class="image main"><img src="images/World Code.png" alt="" /></span>
 								<p> The mainboard uses a STM32H723 microcontroller to control the stepper motors, react to interrupts, and other peripherals. This is linked to a Raspberry Pi CM4 microprocessor as a downstream USB device. This microprocessor runs linux and can interface with the STM32 over USB CDC.</p>
 								<p> The use of STM32 comes with great flexibility, but is very low level. Instead of using libraries the stepper motor steps are controlled using hardware timer with callback interrupts. The USB CDC implementation required management of buffers in C to ensure proper receipt and transmission of messages. Eventually an RTOS like FreeRTOS could be implemented to handle several concurrent tasks.</p>
 								<p> While these implementations come with steep learning curves, the result is a more robust system with great amounts of flexibility!</p>
